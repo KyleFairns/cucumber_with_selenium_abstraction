@@ -1,0 +1,14 @@
+project: "Directory Setup Example"
+
+profile: "chrome"
+
+profiles:
+  chrome:
+    base_url: "https://www.google.com"
+    browser:
+      name: "chrome"
+      version: "latest"
+    slow: 'true'
+    timeouts:
+      scenario: '200'
+      step: '20'
