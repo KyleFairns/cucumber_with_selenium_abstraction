@@ -10,6 +10,7 @@ Hit enter/return to resume.
 
 #### TODO
 - Documentation with RDoc for the Selenium Abstraction Library (currently researching).
+- Refactor of classes.rb
 - Bespoke reporter
 
 #### Notes  
