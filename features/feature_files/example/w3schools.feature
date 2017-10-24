@@ -1,4 +1,4 @@
-@w3schools
+@example @w3schools
 Feature: Test of W3Schools examples
 
   As a tester
