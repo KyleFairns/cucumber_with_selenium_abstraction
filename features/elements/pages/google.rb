@@ -24,6 +24,7 @@ module Project
         }
       end
 
+      #WiP
       def self.follow_result(text)
         all_results = elements[:result].find.all
         result = false
