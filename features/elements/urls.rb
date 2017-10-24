@@ -3,7 +3,8 @@ module Project
     def self.urls
       {
           home: url('http://www.google.com/'),
-          facebook_home: url('https://en-gb.facebook.com/')
+          facebook_home: url('https://en-gb.facebook.com/'),
+          w3schools_select: url('https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_select'),
       }
     end
 

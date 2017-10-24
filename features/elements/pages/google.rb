@@ -4,7 +4,7 @@ module Project
       def self.elements
         {
             search: element({css: 'input[name="q"]'}),
-            result: element({css: 'h3.r a'})
+            result: element({css: 'h3.r a'}),
         }
       end
 
