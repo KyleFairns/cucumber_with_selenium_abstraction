@@ -8,6 +8,7 @@ module Project
         }
       end
 
+      # Selects the option given in the W3Schools example of the select box
       def self.select_option(option)
         w3frame = elements[:iframe]
         w3select = elements[:iframe]

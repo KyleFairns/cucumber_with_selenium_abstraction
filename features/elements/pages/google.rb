@@ -24,7 +24,7 @@ module Project
         }
       end
 
-      #WiP
+      # Follows the first result that's header includes the text given
       def self.follow_result(text)
         all_results = elements[:result].find.all
         result = false
