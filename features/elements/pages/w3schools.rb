@@ -9,12 +9,15 @@ module Project
       end
 
       def self.select_option(option)
+        w3frame = elements[:iframe]
+        w3select = elements[:iframe]
+
         browser.wait.for {
-          elements[:iframe].to.be.displayed
+          w3frame.to.be.displayed
         }
 
-        elements[:iframe].switch.to.frame
-        elements[:select].select(option)
+        w3frame.switch.to.frame
+        w3select.select(option)
       end
     end
   end
