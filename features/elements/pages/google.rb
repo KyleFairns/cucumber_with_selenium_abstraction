@@ -25,7 +25,6 @@ module Project
       end
 
       def self.follow_result(text)
-        find_result
         all_results = elements[:result].find.all
         result = false
 

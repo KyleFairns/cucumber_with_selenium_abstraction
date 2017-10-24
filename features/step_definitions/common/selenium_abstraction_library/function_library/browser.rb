@@ -37,4 +37,13 @@ Browser.class_eval do
     get_driver.switch_to.default_content
     return self
   end
+
+  def url(*expected)
+    if self.switches[:current]
+      self.reset_switches
+      return get_driver.current_url
+    else
+      expect(self.current.url).to.be.equal.to(expected)
+    end
+  end
 end

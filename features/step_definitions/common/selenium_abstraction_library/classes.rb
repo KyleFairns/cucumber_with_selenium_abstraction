@@ -297,8 +297,15 @@ class Browser < Chain
         new: Switch.new(false, 0),
         close: Switch.new(false, 0),
         latest: Switch.new(false, 0),
-        switch: Switch.new(false, 0)
+        switch: Switch.new(false, 0),
+        current: Switch.new(false, 0)
     }
+  end
+
+  def current
+    @switches[:on] += 1
+    @switches[:current].set({value: true, order: @switches[:on]})
+    self
   end
 
   def new

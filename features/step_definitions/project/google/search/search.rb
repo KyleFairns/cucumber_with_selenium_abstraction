@@ -7,5 +7,8 @@ end
 
 Then 'I should see a result' do
   google.find_result
+end
+
+When 'I follow the first relevant result' do
   google.follow_result(@search_term)
 end
